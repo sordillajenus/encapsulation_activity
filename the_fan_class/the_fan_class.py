@@ -23,3 +23,8 @@ class Fan:
     def get_on(self):
         return self.__on
     
+    def set_speed(self, speed):
+        self.__speed = speed
+    
+    def set_radius(self, radius):
+        self.__radius = radius
