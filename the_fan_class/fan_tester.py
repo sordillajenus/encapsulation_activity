@@ -1,5 +1,5 @@
 from the_fan_class import Fan
-from fan_types import FanTypes
+import fan_types
 
 class TestFan:
     def __init__(self, fan):
