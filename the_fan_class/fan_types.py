@@ -1,5 +1,5 @@
 class NormalFan:
-    def sound():
+    def sound(self):
         return ".... */silent"
     
 class TurboFan:
