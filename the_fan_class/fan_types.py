@@ -1,2 +1,3 @@
 class FanTypes:
-    pass
+    
+    def 
