@@ -56,5 +56,17 @@ class TestFan:
             fan_2.set_on(False)
 
         print("Details")
+        print("\n\nFan 1")
+        print("Speed:", fan_1.get_speed())
+        print("Radius:", fan_1.get_radius())
+        print("Color:", fan_1.get_color())
+        print("On:", fan_1.get_on())
+
+        print("\n\nFan 2")
+        print("Speed:", fan_2.get_speed())
+        print("Radius:", fan_2.get_radius())
+        print("Color:", fan_2.get_color())
+        print("On:", fan_2.get_on())
+
 
           
