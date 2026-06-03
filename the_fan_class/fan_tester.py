@@ -38,9 +38,23 @@ class TestFan:
 
     def run(self):
         print("Create Fan 1")
-        fan1 = self.create_fan()
+        fan_1 = self.create_fan()
 
         print("\n=== Create Fan 2 ===")
-        fan2 = self.create_fan()
+        fan_2 = self.create_fan()
+
+        if fan_1:
+            fan_1.set_speed(Fan.FAST)
+            fan_1.set_radius(10)
+            fan_1.set_color("Yellow")
+            fan_1.set_on(True)
+
+        elif fan_2:
+            fan_2.set_speed(Fan.MEDIUM)
+            fan_2.set_radius(5)
+            fan_2.get_color()
+            fan_2.set_on(False)
+
+        print("Details")
 
           
