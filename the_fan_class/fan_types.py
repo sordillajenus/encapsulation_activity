@@ -1,27 +1,29 @@
-class NormalFan:
+from the_fan_class import Fan
+
+class NormalFan(Fan):
     def sound(self):
         return ".... */silent"
     
-class TurboFan:
+class TurboFan(Fan):
     def sound(self):
         return "WHOOOOOSH!!!"
     
-class CeilingFan:
+class CeilingFan(Fan):
     def sound(self):
         return "Whoosh!"
     
-class WindowFan:
+class WindowFan(Fan):
     def sound(self):
         return "Brrrrrr!"
     
-class BoxFan:
+class BoxFan(Fan):
     def sound(self):
         return "Frrrrrr!"
     
-class ExhaustFan:
+class ExhaustFan(Fan):
     def sound(self):
         return "Rrrrrrrr!"
     
-class PedestalFan:
+class PedestalFan(Fan):
     def sound(self):
         return "Whirrrrrr!"
