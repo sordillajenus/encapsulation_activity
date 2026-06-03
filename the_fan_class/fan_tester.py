@@ -68,5 +68,7 @@ class TestFan:
         print("Color:", fan_2.get_color())
         print("On:", fan_2.get_on())
 
+test = TestFan()
+test.run()
 
           
