@@ -27,3 +27,21 @@ class Car:
 
     def refuel(self):
         self.__fuel = 100
+
+
+def test():
+    car = Car(2024, "Mustang")
+
+    print("Car Testing")
+
+    for i in range(25):
+        car.accelerate()
+        print(f"Speed: {car.get_speed()} | Fuel: {car.get_fuel()}")
+
+    print("\nRefueling car")
+    car.refuel()
+
+    print(f"Fuel after refill: {car.get_fuel()}")
+
+
+test()
