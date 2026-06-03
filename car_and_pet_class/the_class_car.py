@@ -9,10 +9,21 @@ class Car:
     def accelerate(self):
         if self.__fuel > 0:
             self.__speed += 5
-            self.__fuel -= 2
+            self.__fuel -= 5
+        else:
+            print("Out of fuel! Cannot accelerate.")
 
     def brake(self):
-        self.__speed -= 5
+        if self.__speed >= 5:
+            self.__speed -= 5
+        else:
+            self.__speed = 0
 
     def get_speed(self):
         return self.__speed
+
+    def get_fuel(self):
+        return self.__fuel
+
+    def refuel(self):
+        self.__fuel = 100
