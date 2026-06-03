@@ -36,13 +36,12 @@ def test():
 
     for i in range(5):
         car.accelerate()
-        print(f"Speed: {car.get_speed()}")
+        print(f"Speed: {car.get_speed()} | Fuel: {car.get_fuel()}")
 
     print("\nCar Testing - Brake")
 
     for i in range(5):
         car.brake()
-        print(f"Speed: {car.get_speed()}")
-
+        print(f"Speed: {car.get_speed()} | Fuel: {car.get_fuel()}")
 
 test()
