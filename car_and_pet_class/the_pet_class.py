@@ -20,8 +20,20 @@ class Pet:
         return self.__animal_type
     
     def get_age(self):
-        
         return self.__age
+    
+    def speak(self):
+        animal = self.__animal_type.lower()
+
+        if animal == "dog":
+            return "Woof!"
+        elif animal == "cat":
+            return "Meow!"
+        elif animal == "bird":
+            return "Chirp!"
+        else:
+            return "..."
+
     
 def test():
     pet = Pet()
@@ -41,6 +53,7 @@ def test():
     print("\nPet Information")
     print("Name:", pet.get_name())
     print("Type:", pet.get_animal_type())
+    print("Sound:", pet.speak())
     print("Age:", pet.get_age())
 
 
