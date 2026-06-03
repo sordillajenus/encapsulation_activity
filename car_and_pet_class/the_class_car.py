@@ -10,3 +10,9 @@ class Car:
         if self.__fuel > 0:
             self.__speed += 5
             self.__fuel -= 2
+
+    def brake(self):
+        self.__speed -= 5
+
+    def get_speed(self):
+        return self.__speed
