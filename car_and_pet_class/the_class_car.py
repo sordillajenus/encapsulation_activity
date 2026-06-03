@@ -32,16 +32,17 @@ class Car:
 def test():
     car = Car(2024, "Mustang")
 
-    print("Car Testing")
+    print("Car Testing - Accelerate")
 
-    for i in range(25):
+    for i in range(5):
         car.accelerate()
-        print(f"Speed: {car.get_speed()} | Fuel: {car.get_fuel()}")
+        print(f"Speed: {car.get_speed()}")
 
-    print("\nRefueling car")
-    car.refuel()
+    print("\nCar Testing - Brake")
 
-    print(f"Fuel after refill: {car.get_fuel()}")
+    for i in range(5):
+        car.brake()
+        print(f"Speed: {car.get_speed()}")
 
 
 test()
