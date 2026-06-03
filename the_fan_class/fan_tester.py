@@ -3,7 +3,7 @@ from fan_types import *
 
 class TestFan:
 
-    def run(self):
+    def create_fan(self):
         print("Choose a Fan to Test")
         print("1. Normal")
         print("2. Turbo")
@@ -13,7 +13,7 @@ class TestFan:
         print("6. Exhaust")
         print("7. Pedestal")
 
-        choice = int(input("Enter your choice(1-7):"))
+        choice = int(input("Enter your choice (1-7): "))
 
         if choice == 1:
             fan = NormalFan()
@@ -29,3 +29,18 @@ class TestFan:
             fan = ExhaustFan()
         elif choice == 7:
             fan = PedestalFan()
+        else:
+            print("Invalid choice")
+            return None
+
+        return fan
+
+
+    def run(self):
+        print("Create Fan 1")
+        fan1 = self.create_fan()
+
+        print("\n=== Create Fan 2 ===")
+        fan2 = self.create_fan()
+
+          
