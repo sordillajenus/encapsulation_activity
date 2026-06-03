@@ -69,6 +69,6 @@ class TestFan:
         print("On:", fan_2.get_on())
 
 test = TestFan()
-test.run(
+test.run()
 
           
